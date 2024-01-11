@@ -14,6 +14,7 @@ username.textContent = (inputName + "'s Balance:")
 deposit.addEventListener("click" , function(){
     balance = Number(balance) + Number(userInput.value);        //Adds money to users balance
     balOutput.textContent = "$" + balance
+    userInput.value = ""
 })
 
 withdraw.addEventListener("click" , function(){
@@ -22,5 +23,6 @@ withdraw.addEventListener("click" , function(){
     }else{
         balance = Number(balance) - Number(userInput.value) 
         balOutput.textContent = "$" + balance
+        userInput.value = ""
     }
 })
