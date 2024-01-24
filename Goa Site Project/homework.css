@@ -1,0 +1,290 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+#navigation {
+    display: flex;
+    gap: 100px;
+    justify-content: center;
+    font-size: 30px;
+    background-color: rgb(0, 24, 9);
+    color: white;
+    position: fixed;
+    width: 100%;;
+    z-index: 999;
+    font-weight: 600;
+    height: 100px;
+    align-items: center;
+    text-shadow: 5px 3px black;
+}
+
+#dc-link {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    transition: 0.5s;
+    padding: 15px;
+}
+
+
+#dc-link:hover {
+    box-shadow: 0px 9px 30px rgba(255, 255, 255, 0.3);
+    padding: 17px;
+    background-color: rgba(0, 189, 0, 0.329);
+    border-radius: 50px;
+    padding: 25px;
+    text-shadow: 5px 5px 5px black;
+}
+
+#home {
+    text-decoration: none;
+    color: white;
+    transition: 0.5s;
+    padding: 15px;
+}
+
+#home:hover {
+    box-shadow: 0px 9px 30px rgba(255, 255, 255, 0.3);
+    background-color: rgba(0, 189, 0, 0.329);
+    border-radius: 30px;
+    padding: 20px;
+    text-shadow: 5px 5px 5px black;
+}
+
+#about {
+    text-decoration: none;
+    color: white;
+    transition: 0.5s;
+    padding: 15px;
+}
+
+#about:hover {
+    box-shadow: 0px 9px 30px rgba(255, 255, 255, 0.3);
+    background-color: rgba(0, 189, 0, 0.329);
+    border-radius: 50px;
+    padding: 25px;
+    text-shadow: 5px 5px 5px black;
+}
+
+#downloads {
+    text-decoration: none;
+    color: white;
+    transition: 0.5s;
+    padding: 15px;
+}
+
+#downloads:hover {
+    box-shadow: 0px 9px 30px rgba(255, 255, 255, 0.3);
+    background-color: rgba(0, 189, 0, 0.329);
+    border-radius: 50px;
+    padding: 25px;
+    text-shadow: 5px 5px 5px black;
+}
+
+
+.fa-house {
+    color: white;
+    z-index: 999;
+    position: relative; right: 7px;
+}
+
+.fa-discord {
+    position: relative; right: 5px;
+}
+
+.fa-download {
+    position: relative; right: 10px;
+}
+
+.fa-book {
+    position: relative; right: 10px;
+}
+
+
+#keshelava {
+    border-radius: 35px;
+    width: 145px;
+    position: relative; top: 170px; left: 70px;
+    position: fixed;
+}
+
+#teachers {
+    background-color: rgb(0, 0, 0);
+    width: 350px;
+    height: 1000px;
+    position: relative; bottom: -100px;
+    position: fixed;
+    z-index: 998;
+}
+
+#teachersP {
+    position: relative; top: 100px; left: 20px;
+    font-family:Arial, Helvetica, sans-serif; 
+    font-weight: 900;
+    z-index: 999;
+    color: white;
+    font-size: 50px;
+    position: fixed;
+}
+
+#ceo {
+    z-index: 999;
+    position: relative; top: 350px; left: 20px;
+    position: fixed;
+    font-weight: 900;
+    font-size: 30px;
+    color: white;
+}
+
+#ceo-desc {
+    z-index: 999;
+    position: relative; top: 395px; left: 22px;
+    position: fixed;
+    width: 320px;
+    color: rgb(189, 189, 189);
+}
+
+#luka {
+    border-radius: 35px;
+    width: 150px;
+    position: relative; top: 535px; left: 70px;
+    position: fixed;
+}
+
+
+#mentor {
+    z-index: 999;
+    position: relative; top: 705px; left: -10px;
+    width: 300px;
+    text-align: center;
+    position: fixed;
+    font-weight: 900;
+    font-size: 30px;
+    color: white;
+}
+
+#mentor-desc {
+    z-index: 999;
+    position: relative; top: 785px; left: 20px;
+    position: fixed;
+    width: 320px;
+    color: rgb(189, 189, 189);
+}
+
+#welcome {
+    position: relative; top: 100px; left: px;
+    text-align: center;
+    font-size: 50px;
+    background-color: #19181b;
+    height: fit-content;
+    width: 1800px;
+    color: white;
+}
+
+
+#welcome-to {
+    position: relative; top: 30px; left: 70px;
+    font-size: 35px;
+    font-family:monospace;
+}
+
+#welcome-goa {
+    position: relative; top: 35px; left: 70px;
+    font-size: 60px;
+    font-weight: 900;
+    color: rgb(66, 206, 55);
+}
+
+#dreams {
+    position: relative; top: 35px; left: 80px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: monospace;
+}
+
+#goa-img {
+    width: 500px;
+    border-radius: 50px;
+    box-shadow: inset 0 0 50px #fff, inset 10px 0 50px rgb(107, 153, 115), inset -10px 0 60px rgb(140, 223, 155), inset 10px 0 200px rgb(1, 154, 29), inset -10px 0 200px rgb(4, 112, 23), 0 0 40px #b7ebc6, -10px 0 80px rgb(57, 211, 86), 10px 0 80px rgb(51, 3, 63);
+    position: relative; top: 230px; left: 550px;
+}
+
+#about-us {
+    font-weight: 900;
+    font-size: 35px;
+    position: relative; bottom: 215px; right: 250px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#about-us-desc {
+    font-size: 30px;
+    width: 530px;
+    position: relative; bottom: 200px; left: 400px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
+}
+
+#goa-video {
+    width: 1000px;
+    height: 400px;
+    position: relative; left: 100px; bottom: 50px;
+    border-radius: 30px;
+    box-shadow: 0px 9px 30px 0px rgba(255,255,255,0.3);
+}
+
+#why {
+    color: white;
+    position: relative; bottom: 70px; left: 65px;
+}
+
+#why-goa {
+    color: rgb(66, 206, 55);
+}
+
+li {
+    width: 1000px;
+    position: relative; left: 500px;
+    color: rgb(255, 255, 255);
+}
+
+#right {
+    background: rgb(0, 0, 0);
+    position: relative; bottom: 3080px; left: 1800px;
+    width: 130px;
+    height:2000px;
+    text-align: center;
+}
+
+#youtube {
+    height: 100px;
+    width: 100px;
+    border-radius: 50px;
+    position: relative; right: 10px; top: 50px;
+}
+
+button {
+    background: transparent;
+    border-color: transparent;
+}
+
+#socials {
+    color: rgb(66, 206, 55);
+    font-size: 70px;
+    position: relative; right: 10px;
+}
+
+#facebook {
+    height: 100px;
+    width: 100px;
+    border-radius: 50px;
+    position: relative; right: 10px; top: 250px;
+}
+
+#yt {
+    color: rgb(255, 0, 0);
+    font-size: 25px;
+    position: relative; right: 10px; top: 50px;
+}

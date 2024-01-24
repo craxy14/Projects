@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-family: 'Roboto', sans-serif;
+}
+
+nav ul{
+    display: flex;
+    justify-content: flex-end;
+    gap: 30px;
+    padding: 25px;
+}
+
+.li-item {
+    justify-self: flex-end;
+    display: flex;
+    font-size: 20px;
+}
+
+.started button {
+    background-color: #8d50f2;
+    color: white;
+    border-radius: 40px;
+    border:none;
+    outline: none;
+    cursor: pointer;
+    width: 130px;
+    height: 50px;
+    font-size: 17px;
+    padding: 0;
+    margin: 0;
+    transition: 0.5s;
+    position: relative; bottom: 10px;
+}
+
+.started button:hover {
+    opacity: 87%;
+}
+
+
+.website {
+    margin-right: auto;
+    font-size: 35px;
+    font-weight: 700;
+    opacity: 75%;
+}
+
+div {
+    display: flex;
+    justify-content: space-between;
+}
+
+div .button2 {
+    justify-content: flex-start;
+    position: relative; top: 200px;
+}
+
+.button2 {
+    background-color: #8d50f2;
+    color: white;
+    border-radius: 40px;
+    border:none;
+    outline: none;
+    cursor: pointer;
+    width: 130px;
+    height: 50px;
+    font-size: 17px;
+    padding: 0;
+    margin: 0;
+    transition: 0.5s;
+    position: relative; bottom: 10px;
+}
+
+.button2:hover {
+    opacity: 87%;
+}
+
+div #lorem {
+    font-size: 25px;
+    width: 350px;
+    display: flex;
+    align-items: flex-end;
+    height: 300px;
+
+}
+
+#design {
+    display: flex;
+    align-items: center;
+    position: relative;
+    color:#8d50f2;
+    font-size: 35px;
+    font-weight: 900;
+    height: 200px;
+}
