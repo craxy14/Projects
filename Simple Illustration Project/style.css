@@ -11,8 +11,9 @@
 nav ul{
     display: flex;
     justify-content: flex-end;
+    align-items: center;
     gap: 30px;
-    padding: 25px;
+    padding: 25px 6rem;
 }
 
 .li-item {
@@ -49,15 +50,13 @@ nav ul{
     opacity: 75%;
 }
 
-div {
+#main-section {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    padding: 0 6rem;
 }
 
-div .button2 {
-    justify-content: flex-start;
-    position: relative; top: 200px;
-}
 
 .button2 {
     background-color: #8d50f2;
@@ -72,7 +71,6 @@ div .button2 {
     padding: 0;
     margin: 0;
     transition: 0.5s;
-    position: relative; bottom: 10px;
 }
 
 .button2:hover {
@@ -81,19 +79,22 @@ div .button2 {
 
 div #lorem {
     font-size: 25px;
-    width: 350px;
     display: flex;
     align-items: flex-end;
-    height: 300px;
+    width: 700px;
 
 }
 
 #design {
     display: flex;
     align-items: center;
-    position: relative;
     color:#8d50f2;
     font-size: 35px;
     font-weight: 900;
-    height: 200px;
+}
+
+#text-section {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
 }
