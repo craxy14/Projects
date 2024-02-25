@@ -114,6 +114,7 @@ header nav #links #home:hover {
     background-color: #ffaa17;
     border-radius: 10px;
     border: 1px solid #ffaa17;
+    transition: 0.5s;
 }
 
 .btn:hover {

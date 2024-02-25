@@ -6,7 +6,6 @@ let deposit = document.getElementById("plus")
 let withdraw = document.getElementById("minus")
 
 
-
 let balance = 0
 let inputName = prompt("Please Enter Your Name:")       //Gets user's Name.
 username.textContent = (inputName + "'s Balance:")

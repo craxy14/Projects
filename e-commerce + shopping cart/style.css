@@ -1,0 +1,295 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    list-style: none;
+    text-decoration: none;
+}
+
+a {
+    color: white;
+}
+
+#navigation {
+    background-color: rgb(34, 34, 34);
+    color: white;
+    height: 60px;
+    display: flex;
+    padding: 25px 25px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#socials {
+    font-size: 1.2rem;
+    letter-spacing: 10px;
+    margin-left: 200px;
+}
+
+#vanomotiashvili {
+    font-family: "Fira Sans", sans-serif;
+}
+
+#nav {
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    font-weight: 200;
+    justify-content: space-evenly;
+    height: 90px;
+}
+
+#motia {
+    width: 400px;
+    margin-left: 50px;
+}
+
+#home ul{
+    display: flex;
+    flex-direction: row;
+    color: rgb(0, 0, 0);
+    gap: 10px;
+    font-size: 1.2rem;
+    margin-right: 50px;
+}
+
+#icons {
+    letter-spacing: 5px;
+    margin-right: 140px;
+}
+
+#hero-img {
+    background-image: url(".//hero.7ad7c0802544a95b5413.png"); width: 100%; height: 650px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#hero-content {
+    margin-right: 900px;
+}
+
+.shop {
+    width: fit-content;
+    height: fit-content;
+    font-size: 1.3rem;
+    background-color: rgb(34, 34, 34);
+    color: white;
+    border: none;
+    border-radius: 7px;
+    padding: 15px;
+    margin-top: 20px;
+    transition: 0.5s;
+}
+
+.shop:hover {
+    background-color: #222222c2;
+}
+
+#new-collection {
+    font-weight: 900;
+    font-size: 3rem;
+    font-family: "Fira Sans", sans-serif;
+    color: rgb(34, 34, 34);
+}
+
+#motia-date {
+    margin-bottom: 20px;
+}
+
+.shop-men {
+    margin-left: 15px;
+}
+
+#shop-now {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+}
+
+.photo {
+    background-image: url("/e-commerce + shopping cart/jewelry.1b373b521219ad873c33.png");
+    height: 422px;
+    width: 550px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 37px;
+    color: white;
+    font-weight: 800;
+    text-align: center;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.photo2 {
+    background-image: url("/e-commerce + shopping cart/menfashion.31aa622a20471424baf2.png");
+}
+
+.photo3 {
+    background-image: url("/e-commerce + shopping cart/womans.be71c6cbaa8b97372c76.png");
+}
+
+.shop-now-button {
+    border: none;
+    font-size: 1.3rem;
+    padding: 15px;
+    border-radius: 5px;
+    width: 150px;
+    margin-top: 25px;
+    transition: 0.5s;
+}
+
+.shop-now-button:hover {
+    background-color: #222;
+    color: white;
+}
+
+.item {
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.photo-content {
+    margin-top: 150px;
+}
+
+.date {
+    margin-top: 15px;
+}
+
+#bottom {
+    background-image: url("./man.e30004fcfc494f20398a.png");
+    height: 700px;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 50px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    color: #222;
+}
+
+#new {
+    font-size: 70px;
+    font-weight: 900;
+    font-family: "Fira Sans", sans-serif;
+}
+
+#trendy {
+    color: #222;
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.shop2 {
+    border: none;
+    font-size: 1.3rem;
+    padding: 15px;
+    border-radius: 5px;
+    margin-top: 25px;
+    color: white;
+    background-color: #222;
+    transition: 0.5s;
+}
+
+.shop2-men {
+    width: 150px;
+    margin-right: 20px;
+}
+
+#bottom-content {
+    position: relative; top: 200px;
+}
+
+#sale {
+    font-size: 20px;
+    font-weight: 700;
+    margin-top: 70px;
+}
+
+#unsub {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+footer {
+    background-color: #222;
+    color: white;
+    height: 300px;
+}
+
+#footer-content {
+    display: flex;
+    width: 80%;
+    justify-content: center;
+    align-items: center;
+    margin-left: 120px;
+}
+
+input {
+    background-color: #222;
+    border: 1px white solid;
+    color: white;
+    height: 50px;
+    width: 175px;
+    border-radius: 5px;
+    margin-top: 70px;
+    padding: 15px;
+    font-size: 20px;
+    position: relative;
+    margin-left: 80px;
+}
+
+#socials2 {
+    margin-top: 60px;
+    display: flex;
+    width: 90%;
+    align-items: center;
+    justify-content: space-around;
+    margin-left: 30px;
+}
+
+#socials2-icons {
+    font-size: 20px;
+}
+
+hr {
+    width: 70%;
+    margin-left: 250px;
+    margin-top: 50px;
+    position: relative;
+}
+
+#submit {
+    border: none;
+    padding: 5px;
+    height: 50px;
+    width: 80px;
+    font-size: 18px;
+    border-radius: 5px;
+    transition: 0.5s;
+}
+
+#credit {
+    margin-right: 200px;
+}
+
+.shop2:hover {
+    background-color: #222222c2;
+    cursor: pointer;
+}
+
+.fa-solid {
+    color: black;
+}

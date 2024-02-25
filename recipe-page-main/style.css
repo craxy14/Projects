@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Young+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&family=Young+Serif&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Outfit', sans-serif;
+}
+
+body {
+    background-color: #f3e5d8;
+
+}
+
+#main {
+    background-color: white;
+    width: 800px;
+   
+    border-radius: 25px;
+    padding-bottom: 70px;
+    padding-top: 15px;
+}
+
+#omlete-img {
+    width: 700px;
+    padding-top: 35px;
+    border-radius: 20px;
+}
+
+#omlete {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#simple {
+    font-size: 40px;
+    padding-top: 20px;
+    padding-right: 230px;
+}
+
+#simple-desc {
+    font-size: 16px;
+    padding-left: 30px;
+    padding-top: 20px;
+    width: 750px;
+}
+
+#preparation {
+    color: #a0497c;
+    font-size: 23px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    margin-left: -20px;
+}
+
+#prep {
+    display: flex;
+    flex-direction: column;
+    margin-left: 120px;
+    margin-top: 50px;
+    font-size: 15px;
+    font-family: 'Outfit', sans-serif;
+    gap: 20px;
+}
+
+#ingredients {
+    color: #a1481f;
+    font-size: 30px;
+    letter-spacing: 1px;
+}
+
+#ing {
+    padding-left: 50px;
+    padding-top: 70px;
+}
+
+#ing li {
+    padding: 10px;
+    font-weight: 100;
+    list-style-position: inside;
+}
+
+#instructions {
+    color: #a1481f;
+    font-size: 30px;
+    letter-spacing: 1px;
+}
+
+#instr {
+    padding-left: 50px;
+    padding-top: 70px;
+}
+
+#instr li {
+    padding: 10px;
+    font-weight: 100;
+    font-family: 'Outfit', sans-serif;
+    list-style-position: inside;
+}
+
+#instr li::marker {
+    color: #a1481f;
+    font-weight: 800;
+}
+
+#nutrition {
+    color: #a1481f;
+    font-size: 30px;
+    letter-spacing: 1px;
+}
+
+#nutr {
+    padding-left: 50px;
+    padding-top: 70px;
+}
+
+.macros {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 50px;
+    font-size: 17px;
+    gap: 300px;
+    padding-top: 50px;
+}
+
+.macros-num {
+    color: #a1481f;
+    font-size: 18px;
+    display: flex;
+}
+
+.gram0 {
+    padding-left: 30px;
+}
+
+.gram20 {
+    padding-left: 20px;
+}
+
+.gram22 {
+    padding-left: 50px;
+}
+
+.macro-hr {
+    width: 700px;
+}
+
+#instr-hr {
+    width: 720px;
+    margin-left: 50px;
+    margin-top: 40px;
+}
+
+#position {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
