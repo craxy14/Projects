@@ -48,6 +48,14 @@ a {
     margin-left: 50px;
 }
 
+#li-home {
+    color: black;
+}
+
+#li-catalog {
+    color: black;
+}
+
 #home ul{
     display: flex;
     flex-direction: row;
