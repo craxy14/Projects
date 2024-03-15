@@ -24,7 +24,7 @@
     <h1 id="welcome">Welcome to <span class="desc-span">CipherVerse</span></h1>
 
     <div id="description-content">
-        <p id="description">Welcome to our <span class="desc-span">Cipher</span> website, where ancient and modern encryption techniques await!<br> Explore classics like <span class="desc-span">ROT13</span>, <span class="desc-span">Caesar</span>, and <span class="desc-span">Atbash ciphers</span>.<br> Delve into keyboard shift and <span class="desc-span">Morse</span> code, or tackle the complex <span class="desc-span">Polybius square</span>.<br> Whether you're a novice or expert, unlock the secrets of cryptography, <span class="desc-span">With US!</span></p>
+        <p id="description">Welcome to our <span class="desc-span" id="about">Cipher</span> website, where ancient and modern encryption techniques await!<br> Explore classics like <span class="desc-span">ROT13</span>, <span class="desc-span">Caesar</span>, and <span class="desc-span">Atbash ciphers</span>.<br> Delve into keyboard shift and <span class="desc-span">Morse</span> code, or tackle the complex <span class="desc-span">Polybius square</span>.<br> Whether you're a novice or expert, unlock the secrets of cryptography, <span class="desc-span">With US!</span></p>
     </div>
 
 
@@ -48,7 +48,7 @@
             </form>
         </div>
         
-        <div class="square-content">
+        <div class="square-content atbash">
             <p class="code-name">Atbash<br>Cipher</p>
             <form>
                 <input type="text" class="text-area" placeholder="Your Text"><br>
@@ -105,7 +105,7 @@
             </form>
         </div>
         
-        <div class="square-content">
+        <div class="square-content morse">
             <p class="code-name">Morse<br>Code</p>
             <form>
                 <input type="text" class="text-area" placeholder="Your Text"><br>
@@ -124,7 +124,7 @@
             </form>
         </div>
 
-        <div class="square-content">
+        <div class="square-content polybius">
             <p class="code-name">Polybius<br>Square</p>
             <form>
                 <input type="text" class="text-area" placeholder="Your Text"><br>
@@ -157,7 +157,7 @@
                 <input type="number" placeholder="Phone Number">
                 <input type="text" placeholder="Email Subject">
             </div>
-            <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
+            <textarea name="" id="text" cols="30" rows="10" placeholder="Your Message"></textarea>
             <input type="submit" value="Send Message" class="btn2"> 
         </form>
     </section>

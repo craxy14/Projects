@@ -96,6 +96,11 @@ body {
     margin-left: 10%;
 }
 
+.square-content:hover {
+  transform: scale(1.075);
+}
+
+
 
 .square-content {
     border: 3px solid rgba(0, 238, 255, 0.644);
@@ -103,6 +108,7 @@ body {
     text-align: center;
     border-radius: 25px;
     box-shadow: #0ef 0px 5px 20px -10px;
+    transition: 0.35s;
 }
 
 
@@ -137,7 +143,7 @@ body {
     align-items: center;
     width: 13rem;
     overflow: hidden;
-    height: 3rem;
+    height: 3.5rem;
     background-size: 300% 300%;
     backdrop-filter: blur(1rem);
     border-radius: 5rem;
@@ -197,7 +203,7 @@ body {
   }
   
   .btn:hover {
-    transform: scale(1.1)
+    transform: scale(1.2)
   }
   
   .btn:active {
@@ -321,6 +327,8 @@ input {
 
 .contact h2 {
     margin-bottom: 4rem;
+    font-weight: 900;
+    letter-spacing: 5px;
 }
 
 .contact form {
@@ -346,6 +354,16 @@ input {
     margin: 0.7rem 0;
     outline: none;
     border: none;
+}
+
+.input-box input::placeholder {
+  font-family: "Pixelify Sans", sans-serif;
+  letter-spacing: 2px;
+}
+
+#text::placeholder {
+  font-family: "Pixelify Sans", sans-serif;
+  letter-spacing: 2px;
 }
 
 .contact form .input-box input {
@@ -378,11 +396,12 @@ input {
     font-size: 1.6rem;
     color: rgb(255, 255, 255);
     background-color: #212135;
-    transition: 0.3s;
+    transition: 0.3s ease;
 }
 
 .btn2:hover {
     box-shadow: rgba(66, 172, 233, 0.767) 0px 0px 0px 2px;
+    transform: scale(1.05);
 }
 
 .footer {
@@ -399,7 +418,7 @@ input {
 }
 
 #contact-footer {
-    font-size: 1.7rem;
+    font-size: 1.8rem;
 }
 
 #welcome {
@@ -413,4 +432,70 @@ input {
 #welcome .desc-span {
     font-size: 50px;
     font-family: "Pixelify Sans", sans-serif;
+}
+
+.fa-brands {
+  transition: 0.25s ease-in-out;
+}
+
+.fa-brands:hover {
+  transform: scale(1.2);
+}
+
+.fa-discord:hover {
+  color: #7289da;
+}
+
+.fa-facebook:hover {
+  color: #316FF6;
+}
+
+.fa-github:hover {
+  color: #adadad;
+}
+
+.fa-instagram:hover {
+  background-image: linear-gradient(135deg, rgb(74, 234, 220) 0%, rgb(151, 120, 209) 10%, rgb(207, 42, 186) 40%, rgb(238, 44, 130) 60%, rgb(251, 105, 98) 80%, rgb(254, 248, 76) 100%);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.navbar a {
+  font-size: 18px;
+  color: #ffffff;
+  font-family: inherit;
+  font-weight: 800;
+  cursor: pointer;
+  position: relative;
+  border: none;
+  background: none;
+  text-transform: uppercase;
+  transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+  transition-duration: 1000ms;
+  transition-property: color;
+}
+
+.navbar a:focus,
+.navbar a:hover {
+  color: #ffffff;
+}
+
+.navbar a:focus:after,
+.navbar a:hover:after {
+  width: 100%;
+  left: 0%;
+}
+
+.navbar a:after {
+  content: "";
+  pointer-events: none;
+  bottom: -2px;
+  left: 50%;
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  background-color: #0ef;
+  transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+  transition-duration: 550ms;
+  transition-property: width, left;
 }
