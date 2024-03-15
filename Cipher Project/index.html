@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://kit.fontawesome.com/0e8e964837.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header class="header">
+        <a href="#" class="logo" id="cipher">CIPHER <span><i class="fa-solid fa-user-secret"></i></span></a>
+
+        <nav class="navbar">
+            <a href="#" class="active">Home</a>
+            <a href="#about">About</a>
+            <a href="#keyboard-shift">Services</a>
+            <a href="#portfolio">Portfolio</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <h1 id="welcome">Welcome to <span class="desc-span">CipherVerse</span></h1>
+
+    <div id="description-content">
+        <p id="description">Welcome to our <span class="desc-span">Cipher</span> website, where ancient and modern encryption techniques await!<br> Explore classics like <span class="desc-span">ROT13</span>, <span class="desc-span">Caesar</span>, and <span class="desc-span">Atbash ciphers</span>.<br> Delve into keyboard shift and <span class="desc-span">Morse</span> code, or tackle the complex <span class="desc-span">Polybius square</span>.<br> Whether you're a novice or expert, unlock the secrets of cryptography, <span class="desc-span">With US!</span></p>
+    </div>
+
+
+    <div id="squares">
+        <div class="square-content rot13">
+            <p class="code-name">ROT13<br>‎ </p>
+            <form>
+                <input type="text" class="text-area" placeholder="Your Text"><br>
+                <p id="output1" class="output"></p>
+                <button class="btn" type="button">
+                    <strong>GENERATE</strong>
+                    <div id="container-stars">
+                      <div id="stars"></div>
+                    </div>
+                  
+                    <div id="glow">
+                      <div class="circle"></div>
+                      <div class="circle"></div>
+                    </div>
+                  </button>                 
+            </form>
+        </div>
+        
+        <div class="square-content">
+            <p class="code-name">Atbash<br>Cipher</p>
+            <form>
+                <input type="text" class="text-area" placeholder="Your Text"><br>
+                <p id="output2" class="output"></p>
+                <button class="btn" type="button">
+                    <strong>GENERATE</strong>
+                    <div id="container-stars">
+                      <div id="stars"></div>
+                    </div>
+                  
+                    <div id="glow">
+                      <div class="circle"></div>
+                      <div class="circle"></div>
+                    </div>
+                  </button>                  
+            </form>
+        </div>
+
+        <div class="square-content caesar-cipher">
+            <p class="code-name">Caesar<br>Cipher</p>
+            <form>
+                <input type="text" class="text-area" placeholder="Your Text"><br>
+                <p id="output3" class="output"></p>
+                <button class="btn" type="button">
+                    <strong>GENERATE</strong>
+                    <div id="container-stars">
+                      <div id="stars"></div>
+                    </div>
+                  
+                    <div id="glow">
+                      <div class="circle"></div>
+                      <div class="circle"></div>
+                    </div>
+                  </button>                 
+            </form>
+        </div>
+
+        <div class="square-content" id="keyboard-shift">
+            <p class="code-name">Keyboard<br>Shift</p>
+            <form>
+                <input type="text" class="text-area" placeholder="Your Text"><br>
+                <p id="output4" class="output"></p>
+                <button class="btn" type="button">
+                    <strong>GENERATE</strong>
+                    <div id="container-stars">
+                      <div id="stars"></div>
+                    </div>
+                  
+                    <div id="glow">
+                      <div class="circle"></div>
+                      <div class="circle"></div>
+                    </div>
+                  </button>                 
+            </form>
+        </div>
+        
+        <div class="square-content">
+            <p class="code-name">Morse<br>Code</p>
+            <form>
+                <input type="text" class="text-area" placeholder="Your Text"><br>
+                <p id="output5" class="output"></p>
+                <button class="btn" type="button">
+                    <strong>GENERATE</strong>
+                    <div id="container-stars">
+                      <div id="stars"></div>
+                    </div>
+                  
+                    <div id="glow">
+                      <div class="circle"></div>
+                      <div class="circle"></div>
+                    </div>
+                  </button>                 
+            </form>
+        </div>
+
+        <div class="square-content">
+            <p class="code-name">Polybius<br>Square</p>
+            <form>
+                <input type="text" class="text-area" placeholder="Your Text"><br>
+                <p id="output6" class="output"></p>
+                <button class="btn" type="button">
+                    <strong>GENERATE</strong>
+                    <div id="container-stars">
+                      <div id="stars"></div>
+                    </div>
+                  
+                    <div id="glow">
+                      <div class="circle"></div>
+                      <div class="circle"></div>
+                    </div>
+                  </button>                 
+            </form>
+        </div>
+    </div>
+
+
+    <section class="contact" id="contact">
+        <h2 class="heading">Contact <span>Me!</span></h2>
+
+        <form action="#">
+            <div class="input-box">
+                <input type="text" placeholder="Full Name">
+                <input type="email" placeholder="Email Address">
+            </div>
+            <div class="input-box">
+                <input type="number" placeholder="Phone Number">
+                <input type="text" placeholder="Email Subject">
+            </div>
+            <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
+            <input type="submit" value="Send Message" class="btn2"> 
+        </form>
+    </section>
+
+    <footer class="footer" id="portfolio">
+        <div class="footer-text">
+            <p>Copyright &copy; 2024 by Data Tezelashvili | All Rights Reserved.</p>
+        </div>
+        
+                <div id="contact-footer">
+                    <i class="fa-brands fa-discord"></i>
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-github"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                </div>
+    </footer>
+
+    
+
+    <script src="./script.js"></script>
+</body>
+</html>

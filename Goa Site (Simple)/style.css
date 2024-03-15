@@ -9,6 +9,10 @@
     list-style: none;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background-color: #10101a;
 }
@@ -31,7 +35,6 @@ ul {
 }
 
 
-
 #message {
     margin-left: 5px;
 }
@@ -41,15 +44,30 @@ ul {
     justify-content: center;
     align-items: center;
     gap: 40px;
-    margin-left: 65px;
+    margin-left: 50px;
+    z-index: 999;
+    position: fixed;
+    background-color: #1d1d35;
+    padding: 25px;
+    border-radius: 50px;
 }
 
 #home {
     margin-right: auto;
+    position: fixed;
+    margin-right: 1700px;
+    background-color: #1d1d35;
+    padding: 25px;
+    border-radius: 50px;
 }
 
 #contact {
     margin-left: auto;
+    margin-left: 1650px;
+    position: fixed;
+    background-color: #1d1d35;
+    padding: 25px;
+    border-radius: 50px;
 }
 
 #main-p {
@@ -145,7 +163,12 @@ ul {
     font-family: 'Montserrat', sans-serif;
     margin-left: 90px;
     text-align: center;
-    
+}
+
+#about-div:hover {
+    box-shadow: 0px 0px 20px 1px rgba(0,255,36,1),
+    0px 25px 20px -20px rgba(0,0,0,0.45),
+    -25px 0px 20px -20px rgba(0,0,0,0.45);
 }
 
 #about-div {
@@ -153,6 +176,7 @@ ul {
     width: 40%;
     border-radius: 50px;
     margin-top: -20px;
+    transition: 0.5s;
 }
 
 #teaching-main {
@@ -169,6 +193,7 @@ ul {
     border-radius: 40px;
     box-shadow: 0 29px 52px rgba(0,0,0,0.40), 0 25px 16px rgba(0,0,0,0.20);
     background: linear-gradient( to right bottom, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.1) );
+    transition: 0.5s;
 }
 
 #teaching-img {
@@ -185,6 +210,12 @@ ul {
 
 #teaching {
     display: flex;
+}
+
+#teaching-main:hover {
+    box-shadow: 0px 0px 20px 1px rgba(0,255,36,1),
+    0px 25px 20px -20px rgba(0,0,0,0.45),
+    -25px 0px 20px -20px rgba(0,0,0,0.45);
 }
 
 #teaching-system {
