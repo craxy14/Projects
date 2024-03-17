@@ -532,3 +532,66 @@ span {
     font-size: 2.3rem;
     letter-spacing: 25px;
 }
+
+.fa-brands {
+    transition: 0.25s ease-in-out;
+  }
+  
+  .fa-brands:hover {
+    transform: scale(1.2);
+  }
+  
+  .fa-discord:hover {
+    color: #7289da;
+  }
+  
+  .fa-facebook:hover {
+    color: #316FF6;
+  }
+  
+  .fa-github:hover {
+    color: #adadad;
+  }
+  
+  .fa-instagram:hover {
+    background-image: linear-gradient(135deg, rgb(74, 234, 220) 0%, rgb(151, 120, 209) 10%, rgb(207, 42, 186) 40%, rgb(238, 44, 130) 60%, rgb(251, 105, 98) 80%, rgb(254, 248, 76) 100%);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+
+.navbar a {
+    color: #ffffff;
+    cursor: pointer;
+    position: relative;
+    border: none;
+    background: none;
+    transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+    transition-duration: 1000ms;
+    transition-property: color;
+  }
+  
+  .navbar a:focus,
+  .navbar a:hover {
+    color: #ffffff;
+  }
+  
+  .navbar a:focus:after,
+  .navbar a:hover:after {
+    width: 100%;
+    left: 0%;
+  }
+  
+  .navbar a:after {
+    content: "";
+    pointer-events: none;
+    bottom: -2px;
+    left: 50%;
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    background-color: #0ef;
+    transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+    transition-duration: 550ms;
+    transition-property: width, left;
+  }
