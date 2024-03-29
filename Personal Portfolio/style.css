@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap');
 
 * {
     margin: 0;
@@ -8,18 +9,38 @@
     border: none;
     outline: none;
     scroll-behavior: smooth;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Pixelify Sans", sans-serif;
 }
 
 :root {
-    --bg-color: #10101a;        
-    --second-bg-color: #212838; 
-    --text-color: #fff;
-    --main-color: #0ef;
+    --bg-color: #1C1D20;        
+    --second-bg-color: #4579F1; 
+    --text-color: rgb(255, 255, 255);
+    --main-color: #DFD468;
+}
+
+::-webkit-scrollbar{
+    height: .5rem;
+    width: 1rem;
+ }
+ 
+ ::-webkit-scrollbar-track{
+    background-color: transparent;
+ }
+ 
+ ::-webkit-scrollbar-thumb{
+    background-color: #DFD468;
+    border-radius: 5rem;
+ }
+
+.navbar .a {
+    color: var(--text-color);
 }
 
 html {
-    font-size: 62.5%;
+    font-size: 67.5%;
+    font-weight: 700;
+    letter-spacing: 1.5px;
     overflow-x: hidden;
 }
 
@@ -39,8 +60,9 @@ body {
     left: 0;
     width: 100%;
     padding: 2rem 9%;
-    background-color: #1b202b;
+    background-color: var(--second-bg-color);
     display: flex;
+    background-color: #646368b7;
     justify-content: space-between;
     align-items: center;
     z-index: 100;
@@ -61,6 +83,7 @@ body {
     font-size: 1.7rem;
     color: var(--text-color);
     margin-left: 4rem;
+    color: black;
     transition: 0.3s;
 }
 
@@ -75,14 +98,26 @@ body {
     display: none;
 }
 
+a {
+    color: white;
+}
+
+#s {
+    color: white;
+}
+
 .home {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
+
 .home-img img {
+    border-radius: 50px;
+    margin-right: -150px;
     width: 35vw;
+    object-fit: contain;
     animation: floatImage 4s ease-in-out infinite;
 }
 
@@ -142,18 +177,16 @@ span {
     box-shadow: 0 0 1rem var(--main-color);
 }
 
-.btn {
-    display: inline-block;
-    padding: 1rem 2.8rem;
-    background: var(--main-color);
-    border-radius: 4rem;
-    box-shadow: 0 0 1rem var(--main-color);
-    font-size: 1.6rem;
-    color:  var(--second-bg-color);
-    letter-spacing: 0.1rem;
-    font-weight: 600;
-    transition: 0.5s ease;
+.first-btn {
+    padding: 1rem 3rem;
+    font-size: 2rem;
+    background-color: #ebdb53;
 }
+
+.first-btn:hover {
+
+}
+
 
 .btn:hover {
     box-shadow: none;
@@ -200,7 +233,7 @@ span {
 
 .about-content:hover {
     box-shadow: none;
-
+    
 }
 
 .services h2 {
@@ -217,17 +250,17 @@ span {
 
 .services-container .services-box {
     flex: 1 1 30rem;
-    background: var(--second-bg-color);
+    background: var(--bg-color);
     padding: 3rem 2rem 4rem;
     border-radius: 2rem;
     text-align: center;
-    border: 0.2rem solid var(--bg-color);
+    border: 0.2rem solid var(--second-bg-color);
     transition: 0.5s ease;
 }
 
 .services-container .services-box:hover {
-    border-color: var(--main-color);
-    transform: scale(1.02);
+    border-color: rgb(255, 255, 255);
+    transform: scale(1.025);
 }
 
 .services-box i {
@@ -260,16 +293,18 @@ span {
 }
 
 .portfolio-container .portfolio-box {
-        position: relative;
-        border-radius: 2rem;
-        box-shadow: 0 0 1rem var(--bg-color);
-        overflow: hidden;
-        display: flex;
+    position: relative;
+    border-radius: 2rem;
+    box-shadow: 0 0 1rem var(--bg-color);
+    overflow: hidden;
+    display: flex;
 }
 
 .portfolio-box img {
     width: 100%;
     transition: 0.5s ease;
+    height: 400px;
+    object-fit: cover;
 }
 
 .portfolio-box:hover img {
@@ -359,6 +394,9 @@ span {
 
 .contact form .btn {
     margin-top: 2rem;
+    padding: 2rem;
+    color: white;
+    font-size: 1.7rem;
     cursor: pointer;
 }
 
@@ -367,12 +405,16 @@ span {
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-    padding: 2rem 30%;
-    background: var(--second-bg-color);
+    background-color: #646368b7;
+    padding: 2rem 25%;
 }
 
 .footer-text p {
     font-size: 1.6rem;
+}
+
+::placeholder {
+    color: white;
 }
 
 .footer-iconTop a {
@@ -380,8 +422,8 @@ span {
     justify-content: center;
     align-items: center;
     padding: 0.8rem;
-    background: var(--main-color);
-    border-radius: 1rem;
+    background-color: var(--main-color);
+    border-radius: 2rem;
     transition: 0.5s ease;
 }
 
@@ -404,23 +446,23 @@ span {
     .header {
         padding: 2rem 3%;
     }
-
+    
     section {
         padding: 10rem 3% 2rem;
     }
-
+    
     .services {
         padding-bottom: 7rem;
     }
-
+    
     .portfolio {
         padding-bottom: 7rem;
     }
-
+    
     .contact {
         min-height: auto;
     }
-
+    
     .footer {
         padding: 2rem 3%;
     }
@@ -430,7 +472,7 @@ span {
     #menu-icon {
         display: block;
     }
-
+    
     .navbar {
         position: absolute;
         top: 100%;
@@ -442,51 +484,52 @@ span {
         box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, .2);
         display: none;
     }
-
+    
     .navbar.active {
         display: block;
     }
-
+    
     .navbar a {
         display: block; 
         font-size: 2rem;
         margin: 3rem 0;
     }
-
+    
     .home {
         flex-direction: column;
     }
-
+    
     .home-content h3 {
         font-size: 2.6rem;
     }
-
+    
     .home-content h1 {
         font-size: 5rem;
     }
-
+    
     .home-img img {
         width: 70vw;
+        margin-right: 200px;
         margin-top: 4rem;
     }
-
+    
     .about {
         flex-direction: column-reverse;
     }
-
+    
     .about img {
         width: 70vw;
         margin-top: 4rem;
     }
-
+    
     .services h2 {
         margin-bottom: 3rem;
     }
-
+    
     .portfolio h2 {
         margin-bottom: 3rem;
     }
-
+    
     .portfolio-container {
         grid-template-columns: repeat(2 , 1fr);
     }
@@ -502,7 +545,7 @@ span {
     html {
         font-size: 50%;
     }
-
+    
     .contact form .input-box input {
         width: 100%;
     }
@@ -512,15 +555,15 @@ span {
     .home-img img {
         width: 90vw;
     }
-
+    
     .about-img img {
         width: 90vw;
     }
-
+    
     .footer {
         flex-direction: column-reverse;
     }
-
+    
     .footer p {
         text-align: center;
         margin-top: 2rem;
@@ -535,25 +578,25 @@ span {
 
 .fa-brands {
     transition: 0.25s ease-in-out;
-  }
-  
-  .fa-brands:hover {
+}
+
+.fa-brands:hover {
     transform: scale(1.2);
-  }
-  
-  .fa-discord:hover {
+}
+
+.fa-discord:hover {
     color: #7289da;
-  }
-  
-  .fa-facebook:hover {
+}
+
+.fa-facebook:hover {
     color: #316FF6;
-  }
-  
-  .fa-github:hover {
+}
+
+.fa-github:hover {
     color: #adadad;
-  }
-  
-  .fa-instagram:hover {
+}
+
+.fa-instagram:hover {
     background-image: linear-gradient(135deg, rgb(74, 234, 220) 0%, rgb(151, 120, 209) 10%, rgb(207, 42, 186) 40%, rgb(238, 44, 130) 60%, rgb(251, 105, 98) 80%, rgb(254, 248, 76) 100%);
     -webkit-background-clip: text;
     color: transparent;
@@ -569,20 +612,20 @@ span {
     transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
     transition-duration: 1000ms;
     transition-property: color;
-  }
-  
-  .navbar a:focus,
-  .navbar a:hover {
+}
+
+.navbar a:focus,
+.navbar a:hover {
     color: #ffffff;
-  }
-  
-  .navbar a:focus:after,
-  .navbar a:hover:after {
+}
+
+.navbar a:focus:after,
+.navbar a:hover:after {
     width: 100%;
     left: 0%;
-  }
-  
-  .navbar a:after {
+}
+
+.navbar a:after {
     content: "";
     pointer-events: none;
     bottom: -2px;
@@ -590,8 +633,25 @@ span {
     position: absolute;
     width: 0%;
     height: 2px;
-    background-color: #0ef;
+    background-color: #DFD468;
     transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
     transition-duration: 550ms;
     transition-property: width, left;
-  }
+}
+.btn {
+    padding: 1rem 3rem;
+    font-size: 2rem;
+    display: inline-block;
+    background: #dfd368bd;
+    border-radius: 5rem;
+    box-shadow: 0 0 0.5rem var(--main-color);
+    color:  white;
+    letter-spacing: 0.1rem;
+    font-weight: 600;
+    transition: 0.5s ease;
+}
+
+.submit-btn {
+    width: 150px;
+    padding: 1rem;
+}

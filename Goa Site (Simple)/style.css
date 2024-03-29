@@ -34,38 +34,31 @@ ul {
     cursor: pointer;
 }
 
-
 #message {
     margin-left: 5px;
 }
 
 #abs {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     gap: 40px;
-    margin-left: 50px;
     z-index: 999;
-    position: fixed;
-    background-color: #1d1d35;
     padding: 25px;
     border-radius: 50px;
+    gap: 100px;
+    margin-right: 530px;
 }
+
 
 #home {
     margin-right: auto;
-    position: fixed;
-    margin-right: 1700px;
-    background-color: #1d1d35;
-    padding: 25px;
     border-radius: 50px;
 }
 
 #contact {
     margin-left: auto;
-    margin-left: 1650px;
-    position: fixed;
-    background-color: #1d1d35;
+    margin-left: 0px;
     padding: 25px;
     border-radius: 50px;
 }

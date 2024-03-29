@@ -7,19 +7,24 @@ menuIcon.onclick = () => {
 }
 
 let sections = document.querySelectorAll('section')
-let navLinks = document.querySelectorAll('header nav a')
+let navLinks = [...document.querySelectorAll('header nav a')]
+
+console.log(navLinks)
 
 window.onscroll = () => {
     sections.forEach(sec => {
+        // console.log()
         let top = window.scrollY;
         let offset = sec.offsetTop - 150;
         let height = sec.offsetHeight;
         let id = sec.getAttribute('id');
+        // console.log(id)
 
-        if(top >= offset && top < offset + height) {
+        if(top >= offset && top <= offset + height) {
             navLinks.forEach(links => {
+                console.log(links)
                 links.classList.remove('active')
-                document.querySelector('header nav a [href*=' + id + ']').classList.add('active');
+                document.querySelector(`header nav a[href='#${id}']`).classList.add('active');
             })
         }
     });
