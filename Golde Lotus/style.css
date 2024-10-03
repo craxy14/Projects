@@ -1,0 +1,558 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar{
+    width: 0.5rem;
+}
+
+::-webkit-scrollbar-track{
+    background-color: #222;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: white;
+}
+
+a {
+    color: #333333;
+    transition: 0.5s;
+}
+
+a:hover {
+    text-decoration: underline;
+    text-underline-offset: 10px;
+}
+
+
+/* styling an navigation  */
+nav ul{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+nav {
+    height: 60px;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+
+#nav-home {
+    margin-left: 15px;
+}
+
+nav ul #navigation{
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    font-size: 1.1rem;
+}
+
+#nav-lotus {
+    font-size: 25px;
+    color: #222;
+    font-weight: 600;
+}
+
+nav ul #navigation li {
+    color: rgb(85, 85, 85);
+}
+
+nav ul #navigation li:hover {
+    color: black;
+    cursor: pointer;
+}
+
+.btn {
+    padding: 5px 15px 5px 15px;
+    font-size: 1.1rem;
+    border: 1px solid black;
+    color: #222;
+    background-color: white;
+    transition: 0.25s;
+}
+
+.btn:hover {
+    background-color: #222;
+    color: white;
+    cursor: pointer;
+}
+
+
+/* styling hero section */
+#hero {
+    background-image: url(./images/filter.jfif);
+    height: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+    color: white;
+}
+
+#hero div {
+    border: 3px solid rgb(255, 255, 255);
+    border-radius: 10px;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+#hero-main-p {
+    font-size: 120px;
+}
+
+#hero-main-span {
+    text-decoration: underline 7px;
+    text-underline-offset: 40px;
+}
+
+#hero-p {
+    font-size: 90px;
+    font-weight: 300;
+}
+
+
+/* styling forms */
+form {
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+}
+
+form .form-div {
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+}
+
+#main-form-div {
+    height: 160px;
+    background-color: white;
+    color: #222;
+}
+
+input {
+    padding: 15px 40px;
+    font-size: 1rem;
+    border: 1px solid #222;
+    border-radius: 5px;
+    background-color: white;
+}
+
+label {
+    font-size: 1.3rem;
+    letter-spacing: 2px;
+}
+
+#btn {
+    height: 53px;
+    width: 150px;
+    font-size: 1rem;
+    margin-top: 67px;
+    border: 1px solid #222;
+    border-radius: 5px;
+    background-color: white;
+    transition: 0.25s;
+}
+
+#btn:hover {
+    background-color: #222;
+    color: white;
+    cursor: pointer;
+}
+
+select {
+    height: 55px;
+    width: 150px;
+    border: 1px solid #222;
+    border-radius: 5px;
+    background-color: white;
+}
+
+option {
+    text-align: center;
+    color: grey;
+}
+
+
+
+/* styling hotel description section */
+img {
+    width: 450px;
+    margin-top: 25px;
+}
+
+.rooms-div {
+    display: flex;
+}
+
+#bedroom {
+    display: flex;
+    background-color: white;
+    padding: 25px 0 50px 0;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+    width: 50%;
+}
+
+#bedroom-background {
+    background-image: url(./images/bedroom2.jpg);
+    width: 50%;
+}
+
+.rooms-p {
+    font-size: 35px;
+    color: #222;;
+}
+
+.rooms-desc {
+    font-size: 22px;
+    color: rgb(77, 77, 77);
+    width: 450px;
+}
+
+#kitchen-background {
+    background-image: url(./images/kitchen2);
+    width: 50%;
+}
+
+#kitchen {
+    display: flex;
+    background-color: white;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+    width: 50%;
+    padding-bottom: 35px;
+}
+
+#rooms-section {
+    margin-top: 30px;
+    border: 3px solid #222;
+}
+
+#pool-background {
+    background-image: url(./images/pool2.jpg);
+    width: 50%;
+}
+
+#pool {
+    display: flex;
+    background-color: white;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+    width: 50%;
+    padding-bottom: 35px;
+}
+
+#about {
+    margin-top: 75px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 50px;
+}
+
+#about-p-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 15px;
+}
+
+#about-p {
+    font-size: 2.2rem;
+    color: #2b2b2b;
+}
+
+#since-p {
+    font-size: 3rem;
+    color: #2c2c2c;
+}
+
+#about-desc {
+    width: 1000px;
+}
+
+#about-background {
+    background-image: url(./images/aboutus.jpg);
+    height: 400px;
+    width: 1100px;
+    background-size: cover;
+}
+
+i {
+    font-size: 1.5rem;
+}
+
+#about-us-icons-div {
+    color: #222;
+    width: 1100px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.about-us-i-parent {
+    width: 310px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0px 0px 25px 40px;
+    transition: 0.35s;
+    padding: 20px 50px;
+}
+
+.about-us-i-parent:hover {
+    background-image: url(./images/kitchen2);
+    color: white;
+    cursor: pointer;
+}
+
+.aboutus-div-p {
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.about-us-i-desc {
+    font-size: 0.8rem;
+}
+
+#prices {
+    margin-top: 75px;
+    margin-left: 420px;
+}
+
+#best-prices {
+    font-size: 2.8rem;
+    color: #222;
+    font-weight: 700;
+}
+
+#starts-from {
+    font-size: 2rem;
+    color: #353535;
+    margin-top: 15px;
+}
+
+.cards {
+    margin-top: 50px;
+    display: flex;
+    gap: 50px;
+}
+
+.card-div {
+    height: 340px;
+    width: 320px;
+    border: 1px solid grey;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    transition: 0.25s ease-in-out;
+}
+
+
+.card-background {
+    background-image: url(./images/card.jpg);
+    background-size: cover;
+    height: 40%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    gap: 10px;
+    flex-direction: column;
+    color: white;
+    font-size: 1.2rem;
+}
+
+.price {
+    font-size: 1.8rem;
+}
+
+.no-fee {
+    font-size: 1.2rem;
+}
+
+.fa-check {
+    font-size: 1rem;
+}
+
+.card-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    color: #2e2e2e;
+    margin-top: 10px;
+}
+
+.card-btn {
+    margin-top: 25px;
+}
+
+.card2 {
+    transform: scale(110%);
+    transition: 0.25s ease-in-out;
+}
+
+.card-div:hover {
+    transform: scale(110%);
+}
+
+.card2:hover {
+    transform: scale(120%);
+}
+
+#contact {
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+#contact-left-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#contact-right-div {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-input {
+    width: 100%;
+    height: 25px;
+    border-radius: 0px;
+}
+
+.contact-div {
+    width: 550px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+hr {
+    margin-top: 20px;
+}
+.contact-p {
+    font-size: 1.2rem;
+}
+
+.contact-desc {
+    color: #222;
+}
+
+#contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+textarea {
+    resize: none;
+    border: 1px solid #222;
+}
+
+textarea::placeholder {
+    padding: 15px;
+    font-size: 1.2rem;
+}
+
+#contact-input-div {
+    display: flex;
+    flex-direction: column;
+}
+
+.div-right {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 20px;
+}
+
+#iframe {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+#logo-div {
+    display: flex;
+    margin: 50px 0 75px 0;
+    justify-content: center;
+}
+
+#logo {
+    width: 300px;
+    border-radius: 50%;
+    transition: 0.25s;
+}
+
+#logo:hover {
+    transform: scale(110%);
+    cursor: pointer;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 1.5rem 10%;
+    background: #222;
+    color: white;
+}
+
+#contact-footer {
+    display: flex;
+    gap: 25px;
+}
+
+.footer-text p {
+    font-size: 1.2rem;
+}
+
+.fa-brands {
+    transition: 0.25s ease-in-out;
+    font-size: 1.4rem;
+}
+
+.fa-brands:hover {
+    transform: scale(1.2);
+}
+
+.fa-discord:hover {
+    color: #7289da;
+}
+
+.fa-facebook:hover {
+    color: #316FF6;
+}
+
+.fa-github:hover {
+    color: #adadad;
+}
+
+.fa-instagram:hover {
+    background-image: linear-gradient(135deg, rgb(74, 234, 220) 0%, rgb(151, 120, 209) 10%, rgb(207, 42, 186) 40%, rgb(238, 44, 130) 60%, rgb(251, 105, 98) 80%, rgb(254, 248, 76) 100%);
+    -webkit-background-clip: text;
+    color: transparent;
+}

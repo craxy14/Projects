@@ -1,0 +1,73 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background-color: #4736d4;
+}
+
+#parent-div {
+    padding: 75px;
+    border: 1px solid #222;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    border-radius: 10px;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+input {
+    padding: 10px;
+    border: none;
+    border-bottom: 1px solid #222;
+}
+
+.two-inputs {
+    display: flex;
+    gap: 20px;
+}
+
+input::placeholder {
+    font-size: 1rem;
+}
+
+#general {
+    font-size: 2rem;
+    color: #513eff;
+}
+
+#checkbox-div {
+    margin-top: 20px;
+    display: flex;
+    gap: 10px;
+    color: rgb(90, 90, 90);
+}
+
+#reg {
+    padding: 7.5px;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: none;
+    background-color: #222;
+    color: white;
+    border: 1px solid #2222228c;
+    transition: 0.25s;
+}
+
+#reg:hover {
+    background-color: white;
+    color: #222;
+}

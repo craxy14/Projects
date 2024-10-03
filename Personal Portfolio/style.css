@@ -22,16 +22,16 @@
 ::-webkit-scrollbar{
     height: .5rem;
     width: 1rem;
- }
- 
- ::-webkit-scrollbar-track{
+}
+
+::-webkit-scrollbar-track{
     background-color: transparent;
- }
- 
- ::-webkit-scrollbar-thumb{
+}
+
+::-webkit-scrollbar-thumb{
     background-color: #DFD468;
     border-radius: 5rem;
- }
+}
 
 .navbar .a {
     color: var(--text-color);
@@ -182,11 +182,6 @@ span {
     font-size: 2rem;
     background-color: #ebdb53;
 }
-
-.first-btn:hover {
-
-}
-
 
 .btn:hover {
     box-shadow: none;
@@ -628,7 +623,7 @@ span {
 .navbar a:after {
     content: "";
     pointer-events: none;
-    bottom: -2px;
+    bottom: -10px;
     left: 50%;
     position: absolute;
     width: 0%;
@@ -638,6 +633,7 @@ span {
     transition-duration: 550ms;
     transition-property: width, left;
 }
+
 .btn {
     padding: 1rem 3rem;
     font-size: 2rem;
@@ -655,6 +651,3 @@ span {
     width: 150px;
     padding: 1rem;
 }
-
-
-

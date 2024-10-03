@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Gilda+Display&display=swap');
+/* importing a new font */
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+/* styling body */
+body {
+    background-image: url(./Images/swan-1868697_1920.jpg);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-repeat: no-repeat;
+}
+
+/* styling div of clock */
+#main-div {
+    position: relative;
+    top: 150px;
+    background-color: #0000006b;
+    padding: 35px;
+    color: #ffffff;
+    border: 3px solid #0a0a0a; 
+    border-radius: 15px;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* styling a div for clock to display */
+#clock {
+    text-align: center;
+    font-family: "Gilda Display", serif;
+    font-size: 5rem;
+    letter-spacing: 10px;
+}
+
+#date {
+    text-align: center;
+    font-family: "Gilda Display", serif;
+    font-size: 3rem;
+    letter-spacing: 10px;
+}

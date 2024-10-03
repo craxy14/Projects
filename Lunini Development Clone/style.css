@@ -1,0 +1,614 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/* font-family: "Barlow", sans-serif; */
+
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Gilda+Display&display=swap');
+/* font-family: "Gilda Display", serif; */
+
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Gilda+Display&family=Inter:wght@100..900&display=swap');
+/* font-family: "Inter", sans-serif; */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: "Barlow", sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* #070707 light */
+/* #0a0a0a dark */
+/* rgb(205, 158, 80) yellow */
+
+
+
+/* styling a scrollbar */
+::-webkit-scrollbar{
+    width: 0.55rem;
+}
+
+::-webkit-scrollbar-track{
+    background-color: #070707;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: rgb(205, 158, 80);
+    border-radius: 5rem 0rem 0rem 5rem;
+}
+
+
+/* styling a navigation sections */
+nav {
+    display: flex;
+    justify-content: space-around;
+    height: 45px;
+    background-color: #0c0c0c;
+    color: white;
+}
+
+nav #nav-ul {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+nav #nav-ul li {
+    line-height: 45px;
+    padding: 0px 15px 0px 15px;
+    border-left: 1px solid rgb(87, 87, 87);
+}
+
+
+#nav-icons a {
+    background-color: rgb(205, 158, 80);
+    color: white;
+    padding: 5px 10px;
+    font-size: 1rem;
+    transition: 0.35s;
+}
+
+#nav-icons a:hover {
+    color: rgb(205, 158, 80);
+    background-color: white;
+}
+
+#nav-icons {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+#nav-main {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 150px;
+    background-color: #141414;
+    color: rgb(226, 226, 226);
+    padding: 20px 50px;
+}
+
+#nav-main img {
+    width: 230px;
+}
+
+#nav-main #ul-div ul {
+    display: flex;
+    gap: 20px;
+}
+
+#ul-div a{
+    color: rgb(223, 223, 223);
+}
+
+#nav-main #ul-div ul li {
+    font-size: 1.1rem;
+    font-weight: 500;
+    transition: 0.25s;
+}
+
+#nav-main #ul-div ul li:hover {
+    color: rgb(205, 158, 80);
+}
+
+
+
+
+/* styling a hero section */
+#hero {
+    background-image: url(./Images/hero.jpg);
+    height: 740px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#hero-p-div {
+    color: white;
+    margin-right: 750px;
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+}
+
+#hero-p {
+    font-family: "Gilda Display", serif;
+    font-size: 4.375rem;
+}
+
+#hero-btn {
+    width: fit-content;
+    padding: 15px 25px;
+    color: white;
+    background-color: rgb(205, 158, 80);
+    border: none;
+    font-family: "Gilda Display", serif;
+    font-size: 1.1rem;
+    transition: 0.25s;
+}
+
+#hero-btn:hover {
+    background-color: white;
+    color: rgb(205, 158, 80);
+}
+
+#about-us {
+    background-color: #070707;
+    padding: 100px 20px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 90px;
+}
+
+
+
+
+/* styling an about section */
+#about-container {
+    width: 70%;
+}
+
+.horizontal-line {
+    width: 120px;
+    background-color: rgb(205, 158, 80);
+    height: 2px;
+}
+
+#about-horizontal-div {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+#about-p {
+    font-size: 3.125rem;
+    font-family: "Gilda Display", serif;
+}
+
+#about-desc {
+    font-size: 1.5rem;
+    font-family: "Barlow", sans-serif;
+}
+
+#icons-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 100px;
+    gap: 230px;
+}
+
+.about-icons {
+    width: 250px;
+}
+
+.decor {
+    font-family: "Gilda Display", serif;
+    font-size: 2rem;
+}
+
+
+
+/* styling an best projects section */
+#best-projects {
+    display: grid;
+    gap: 50px;
+    grid-template-columns:auto auto ;
+    background-color: #0c0c0c;
+    padding: 50px 0;
+}
+
+#main-projects-div {
+    display: grid;
+    grid-template-columns:auto auto ;
+    gap: 60px;
+    margin-left: 300px;
+}
+
+.project-img {
+    background-image: url(./Images/project-thumb1.jpg);
+    width: 550px;
+    height: 300px;
+    background-size: cover;
+    display: flex;
+    justify-content: flex-end;
+    align-items: end;
+}
+
+#projects-text-div {
+    display: flex;
+    justify-content: center;
+}
+
+.project-btn {
+    background-color: #070707;
+    color: rgb(190, 148, 80);
+    border: none;
+    font-family: "Gilda Display", serif;
+    padding: 20px 65px;
+    font-size: 1.2rem;
+    transition: 0.35s ease-out;
+}
+
+.project-p {
+    color: rgb(205, 158, 80);
+    font-size: 1.2rem;
+}
+
+#our-best-p {
+    color: white;
+    font-size: 3rem;
+    text-align: center;
+}
+
+.project-desc {
+    color: rgb(231, 231, 231);
+    font-family: "Gilda Display", serif;
+    font-size: 1.3rem;
+}
+
+.project-btn:hover {
+    background-color: rgb(205, 158, 80);
+    color: white;
+}
+
+.project-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    transition: 0.25s ease-out;
+}
+
+.project-text-div {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+
+/* changing a background image for projects cards */
+.project2 {
+    background-image: url(./Images/project-thumb2.jpg);
+}
+
+.project3 {
+    background-image: url(./Images/project-thumb3.jpg);
+}
+
+.project4 {
+    background-image: url(./Images/project-thumb4.jpg);
+}
+
+#our-best-div {
+    display: flex;
+    margin-left: 300px;
+    align-items: center;
+    gap: 15px;
+}
+
+.vertical2 {
+    width: 110px;
+}
+
+/* adding an effect for projects card hover */
+.project-container:hover {
+    transform: scale(105%);
+}
+
+
+
+/* the world section */
+#the-world {
+    display: flex;
+    background-color: #070707;
+    color: white;
+    justify-content: center;
+}
+
+#world-main-div {
+    display: flex;
+    width: 85%;
+    padding: 100px 100px 75px 100px;
+    gap: 35px;
+}
+
+#project-p-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+#the-world-p {
+    font-family: "Gilda Display", serif;
+    font-size: 3.125rem;
+}
+
+#map-img {
+    width: 700px;
+    margin-top: 50px;
+}
+
+.world-horizontal {
+    width: 100px;
+}
+
+#the-world-desc {
+    color: rgb(131, 131, 131);
+}
+
+#world-text-div {
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+}
+
+.active-p {
+    font-size: 1.3rem;
+}
+
+.active-desc {
+    color: rgb(205, 158, 80);
+    font-size: 5rem;
+}
+
+#active-project-main-div {
+    display: flex;
+    gap: 150px;
+}
+
+#world-btn {
+    background-color: #141414;
+    color: rgb(205, 158, 80);
+    font-size: 1.3rem;
+    font-weight: 500;
+    border: none;
+    padding: 20px;
+    border-radius: 5px;
+    transition: 0.35s ease-out;
+}
+
+#world-btn:hover {
+    color: white;
+    background-color: rgb(205, 158, 80);
+}
+
+
+
+
+/* styling an architecture section */
+#architecture-line {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+#main-architecture-div {
+    display: flex;
+    align-items: center;
+    padding-right: 250px;
+    justify-content: space-around;
+}
+
+#architecture-p {
+    font-size: 3.125rem;
+    font-family: "Gilda Display", serif;
+}
+
+#services {
+    color: white;
+    padding: 100px;
+    background-color:#0c0c0c;
+}
+
+sup {
+    color: rgb(205, 158, 80);
+}
+
+#architecture-desc {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+#architecture-desc p {
+    padding: 15px;
+    letter-spacing: 1.5px;
+    font-size: 1.2rem;
+    width: 190%;
+    border-bottom: 1px solid grey;
+}
+
+
+
+
+/* styling an array section */
+#array {
+    padding: 100px;
+    color: white;
+    background-color: #070707;
+    display: flex;
+    flex-direction: column;
+}
+
+#array-horizontal {
+    display: flex;
+    margin-left: 130px;
+    align-items: center;
+    gap: 15px;
+}
+
+#array-p {
+    font-size: 3.125rem;
+    font-family: "Gilda Display", serif;
+}
+
+.array-img {
+    background-image: url(./Images/blog1.png);
+    width: 400px;
+    height: 300px;
+    background-size: cover;
+}
+
+.june-div {
+    background-color: #141414;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 20%;
+    height: 30%;
+    gap: 15px;
+    font-size: 1.3rem;
+}
+
+.date {
+    text-decoration: underline rgb(205, 158, 80) 2px;
+    text-underline-offset: 10px;
+}
+
+.june-p {
+    font-size: 1.1rem;
+}
+
+.inter-view {
+    color: rgb(205, 158, 80);
+}
+
+.array-desc {
+    font-size: 2rem;
+    font-family: "Gilda Display", serif;
+}
+
+.array-text-div {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 400px;
+}
+
+
+/* changing background images for array cards */
+.arr-img2 {
+    background-image: url(./Images/blog2.png);
+}
+
+.arr-img3 {
+    background-image: url(./Images/blog3.png);
+}
+
+.main-arr-div {
+    display: flex;
+    gap: 125px;
+    justify-content: center;
+    margin-top: 75px;
+}
+
+.arr-container {
+    transition: 0.25s;
+}
+
+/* adding an hover effect for array card */
+.arr-container:hover {
+    transform: scale(110%);
+}
+
+
+
+/* footer section */
+footer {
+    background-color: #0f0f0f;
+    color: white;
+    display: flex;
+    padding: 40px;
+    justify-content: center;
+}
+
+#main-footer-logo-div {
+    display: flex;
+    gap: 300px;
+    flex-direction: row;
+}
+
+#main-footer-logo-div div {
+    display: flex;
+    gap: 15px;
+    flex-direction: column;
+}
+
+#footer-logo {
+    width: 250px;
+}
+
+#footer-left-p {
+    font-size: 1.1rem;
+}
+
+#main-footer-logo-div input {
+    font-size: 1.1rem;
+    padding: 15px;
+    border: none;
+}
+
+#main-footer-logo-div button {
+    font-size: 1.1rem;
+    background-color: rgb(205, 158, 80);
+    border: none;
+    color: white;
+    padding: 15px;
+    transition: 0.25s;
+}
+
+#footer-right-div {
+    border-left: grey 1px solid;
+    padding-left: 350px;
+}
+
+#footer-right-div a {
+    transition: 0.25s;
+}
+
+#footer-right-div {
+    font-size: 1.1rem;
+}
+
+#footer-right-div a:hover{
+    color: rgb(205, 158, 80);
+}
+
+#footer-btn:hover {
+    background-color: white;
+    color: rgb(205, 158, 80);
+}

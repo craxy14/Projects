@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- linking a css to a html file -->
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./Calculator_30001.ico" type="image/x-icon">
+    <title>Simple Calculator</title>
+</head>
+<body>
+    <!-- creating a div to store all the elements together -->
+    <div id="parent">
+
+        <!--creating an input to output the result of mathematical statement-->
+        <input id="display" readonly>
+
+        <!-- creating all the possible buttons for calcualtor and giving them a function-->
+        <button class="item item1 cyan" onclick="clearDisplay()">C</button>
+        <button class="item item2 cyan" onclick="del()">DEL</button>
+        <button class="item item3 cyan" onclick='display("/")'>/</button>
+        <button class="item item4 cyan" onclick='display("*")'>X</button>
+        <button class="item item5 blue" onclick='display("7")'>7</button>
+        <button class="item item6 blue" onclick='display("8")'>8</button>
+        <button class="item item7 blue" onclick='display("9")'>9</button>
+        <button class="item item8 cyan" onclick='display("-")'>-</button>
+        <button class="item item9 blue" onclick='display("4")'>4</button>
+        <button class="item item10 blue" onclick='display("5")'>5</button>
+        <button class="item item11 blue" onclick='display("6")'>6</button>
+        <button class="item item12 cyan" onclick='display("+")'>+</button>
+        <button class="item item13 blue" onclick='display("1")'>1</button>
+        <button class="item item14 blue" onclick='display("2")'>2</button>
+        <button class="item item15 blue" onclick='display("3")'>3</button>
+        <button class="item item16 yellow" onclick="calculate()">=</button>
+        <button class="item item17 blue" onclick='display("0")'>0</button>
+        <button class="item item18 blue" onclick='display(".")'>.</button>
+    </div>
+
+    <!-- linking the js file to an html document -->
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: "Montserrat", sans-serif;
+}
+
+body {
+    height: 100vh;
+    background-color: rgb(247, 247, 247);
+}
+
+#pfp-img {
+    width: 120px;
+    border-radius: 50%;
+}
+
+#main-p {
+    font-size: 4rem;
+    color: #333333;
+    font-weight: 500;
+}
+
+#main-desc {
+    font-size: 1.5rem;
+    color: grey;
+    width: 700px;
+    line-height: 200%;
+    text-align: center;
+}
+
+#main-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+    margin-top: 150px;
+}
+
+.card img {
+    width: 170px;
+    border-radius: 50%;
+}
+
+.card-p {
+    color: #333333;
+    font-size: 2.5rem;
+    font-weight: 500;
+}
+
+.card-desc {
+    font-size: 1.35rem;
+    color: grey;
+    width: 500px;
+    line-height: 200%;
+}
+
+#main-card-div {
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 75px 100px;
+    border-radius: 25px;
+    gap: 75px;
+    background-color: white;
+}
+
+.fa-arrow-right {
+    background-color: #383838;
+    color: white;
+    border-radius: 50%;
+    width: 75px;
+    height: 75px;
+    text-align: center;
+    font-size: 2.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #333333;
+    font-size: 2.1rem;
+    gap: 60px;
+    padding: 100px 0 100px 0;
+}
+
+footer i {
+    transition: 0.2s ease-out;
+}
+
+footer i:hover {
+    transform: scale(120%);
+}
+
+.fa-square-snapchat {
+    -webkit-text-fill-color: #333333;
+}
+
+.card i {
+    transition: 0.2s ease-out;
+}
+
+.card i:hover {
+    transform: scale(110%);
+}
+
+img {
+    padding: 10px;
+    border: 1px solid #8a8a8a4f;
+}

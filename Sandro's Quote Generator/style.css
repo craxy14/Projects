@@ -1,0 +1,460 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: "Poppins", sans-serif;
+}
+
+#main {
+    background-image: url(images/statue2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    background-position: center;
+    text-align: center;
+    padding-top: 50px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    gap: 20px;
+    font-weight: 500;
+    font-size: 1.15rem;
+}
+
+
+
+#main-text {
+    margin-top: 200px;
+    color: white;
+    font-weight: 600;
+}
+
+
+#main-text-p {
+    font-size: 4.5rem;
+    color: white;
+    font-weight: 700;
+    letter-spacing: 2.5px;
+}
+
+#desc {
+    margin-top: 85px;
+    color: rgb(85, 85, 85);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    font-size: 0.95rem;
+    gap: 35px;
+}
+
+#desc p {
+    width: 800px;
+}
+
+#desc-main {
+    font-weight: 500;
+    font-size: 1.05rem;
+    margin-bottom: 20px;
+}
+
+#bonus {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 50px;
+    gap: 30px;
+}
+
+#bonus-p {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #313131;
+}
+
+#generator {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 100px;
+    color: rgb(54, 54, 54);
+    font-size: 1.05rem;
+}
+
+#generator-p {
+    font-size: 2rem;
+    color: #333333;
+    font-weight: 800;
+}
+
+#new {
+    width: fit-content;
+    height: 38px;
+    font-size: 1.1rem;
+    background-color: #313131;
+    color: white;
+    padding: 15px;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 7px;
+    transition: 0.35s;
+}
+
+#new:hover {
+    background-color: #252525;
+    transform: scale(1.035);
+}
+
+footer {
+    color: white;
+    background-color: #333333;
+    height: 80px;
+    display: flex;
+    margin-top: 150px;
+    justify-content: center;
+    align-items: center;
+    position: static;
+}
+
+#quote {
+    width: 800px;
+}
+
+#bonus-quote {
+    color: #333333;
+}
+
+@media screen and (max-width: 667px) {
+
+    #main-text-p {
+        font-size: 300%;
+        position: relative; bottom: 100px;
+        font-weight: 800;
+    }
+
+    #main-text {
+        width: 105%;
+    }
+
+    nav ul{ 
+        font-size: 90%;
+        display: flex;
+    }
+
+    #desc p {
+        font-size: 95%;
+        width: 80%;
+    }
+
+
+    #bonus p {
+        font-size: 95%;
+        width: 95%;
+        text-align: center;
+    }
+
+    #bonus-p {
+        font-size: 115%;
+    }
+
+    body {
+        width: 100%;
+    }
+
+    #generator div {
+        font-size: 95%;
+        width: 85%;
+    }
+
+    #quote {
+        width: 80%;
+    }
+
+    footer {
+        font-size: 80%;
+    }
+    
+}
+
+@media screen and (max-width: 896px) {
+    nav ul {
+        font-size: 95%;
+    }
+
+    #main-text-p {
+        line-height: 235%;
+    }
+
+    #quote {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 740px){
+    nav ul {
+        font-size: 90%;
+    }
+
+    #main-text #main-text-p {
+        font-size: 250%;
+    }
+
+    #bonus-p {
+        font-size: 150%;
+    }
+
+    #quote {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 915px){
+    #desc p {
+        font-size: 110%;
+    }
+
+    #quote {
+        width: 80%;
+    }
+
+
+    #main-text #main-text-p {
+        font-size: 300%;
+    }
+}
+
+@media screen and (max-width: 1024px){
+    nav ul {
+        font-size: 130%;
+    }
+
+    #desc p {
+        font-size: 120%;
+        width: 80%;
+    }
+
+    #bonus p {
+        font-size: 125%;
+    }
+
+    #bonus {
+        width: 80%;
+    }
+
+    #generator-div {
+        width: 80%;
+    }
+
+    #quote {
+        width: 80%;
+    }
+
+    #generator #generator-div #new {
+        padding: 30px;
+    }
+}
+
+@media screen and (max-width: 1180px){
+    nav ul li{
+        font-size: 140%;
+    }
+
+    #desc p {
+        font-size: 130%;
+        width: 80%;
+    }
+
+    #main-text #main-text-p {
+        font-size: 450%;
+    }
+
+    #bonus p {
+        font-size: 135%;
+    }
+
+    #bonus {
+        width: 80%;
+    }
+
+    #generator-div {
+        width: 80%;
+    }
+
+    #quote {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 1366px){
+    nav ul {
+        font-size: 170%;
+    }
+
+    #main-text-p {
+        width: 80%;
+        font-size: 650%;
+        line-height: 150%;
+        margin-left: 100px;
+    }
+
+    #date {
+        margin-top: 100px;
+        font-size: 180%;
+    }
+
+    #desc p {
+        font-size: 175%;
+        width: 80%;
+    }
+
+    #bonus p {
+        font-size: 185%;
+    }
+
+    #bonus {
+        width: 80%;
+    }
+
+    #generator-div {
+        width: 80%;
+        font-size: 190%;
+    }
+
+    #generator-p {
+        font-size: 150%;
+    }
+
+    #new {
+        font-size: 2rem;
+        padding: 35px;
+    }
+
+    #quote {
+        width: 80%;
+    }
+
+    footer {
+        font-size: 150%;
+    }
+}
+
+@media screen and (max-width: 720px) {
+    html {
+        width: 100%;
+    }
+
+    nav ul li{
+        font-size: 100%;
+    }
+
+    #main-text #main-text-p {
+        font-size: 300%;
+        line-height: 190%;
+    }
+
+    #date {
+        margin: 0;
+        font-size: 90%;
+    }
+    
+    #desc p {
+        font-size: 100%;
+    }
+
+    #generator #generator-div #new {
+        padding: 20px;
+        font-size: 1.1rem;
+    }
+
+    footer {
+        font-size: 100%;
+    }
+
+    #bonus #bonus-p {
+        font-size: 150%;
+        font-weight: 700;
+    }
+
+    #bonus{
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 882px){
+    html {
+        width: 100%;
+    }
+
+    nav ul {
+        font-size: 85%;
+    }
+
+    #main-text {
+        margin: 0;
+    }
+
+    #main-text #main-text-p {
+        margin-top: 250px;
+        position: relative; right: 110px;
+        line-height: 200%;
+        width: 100%;
+        font-size: 230%;
+    }
+
+    #date {
+        font-size: 115%;
+    }
+
+    footer {
+        font-size: 70%;
+    }
+}
+
+@media screen and (max-width: 1280px){
+    #main-text #main-text-p {
+        font-size: 500%;
+        font-weight: 800;
+    }
+
+    nav ul {
+        font-size: 140%;
+    }
+
+    #main-text #date {
+        font-size: 190%;
+    }
+
+    #new {
+        padding: 30px;
+    }
+}
+
+@media screen and (max-width: 914px){
+    nav ul {
+        font-size: 95%;
+    }
+
+    #main-text #main-text-p {
+        font-size: 300%;
+    }
+
+    #date {
+        font-size: 120%;
+    }
+
+    #new {
+        padding: 20px;
+    }
+}
+

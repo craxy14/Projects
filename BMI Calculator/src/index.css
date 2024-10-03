@@ -1,0 +1,90 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Gilda+Display&family=Jost:ital,wght@0,100..900;1,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Playwrite+IT+Moderna:wght@100..400&family=Press+Start+2P&family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap'); */
+
+body {
+  background-color: #11212D;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  border: none;
+  font-family:sans-serif
+}
+
+#check-p {
+  color: #dde2e1;
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+#main-div {
+  background-color: #06141B;
+  width: fit-content;
+  height: 500px;
+  padding: 50px 100px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+input {
+  padding: 7.5px;
+  text-align: center;
+  border-radius: 3px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 7.5px;
+}
+
+label {
+  color: white;
+}
+
+#btn {
+  color: white;
+  background-color: #253745;
+  transition: 0.25s;
+  padding: 10px;
+  font-size: 1rem;
+}
+
+#btn:hover {
+  cursor: pointer;
+  background-color: #334d64;
+}
+
+#result {
+  color: white;
+}
+
+.underweight {
+  color: orange;
+}
+
+.healhy {
+  color: green;
+}
+
+.overweight {
+  color: red;
+}
+
+#result-div {
+  padding: 5px;
+  border-radius: 10px;
+  display: flex;
+  color: white;
+  gap: 10px;
+  justify-content: center;
+  font-size: 1.3rem;
+}
